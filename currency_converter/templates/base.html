@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+
+<body>
+    <div>
+        <div id="container">
+            {% block content %}{% endblock %}
+                <div class="outline">
+                    <div class="not-valid">
+                        {% if error == True %}
+                        
+                            <div class="not-valid-amount">
+                            
+                                Not a valid code: {{ first_currency }}
+                            </div>
+                            <div class="not-valid-first-currency">
+                                Not a valid code: {{ second_currency }}
+                            </div>
+                            <div class="not-valid-second-currency">
+                                Not a valid amount.
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    
+
+                    <form action="/converter" class="form" method="POST">
+                        <label for="convert-from" class="label">Converting from</label>
+                        <input class="label" type="text" name="convert-from" id="convert-from" value="" placeholder="USD">
+                        <br>
+                        <label for="convert-to" class="label">Converting to</label>
+                        <input class="label" type="text" name="convert-to" id="convert-to" value="" placeholder="GBP">
+                        <br>
+                        <label for="amount">Amount</label>
+                        <input class="label" type="text" name="amount" id="amount">
+                        <br>
+                        <button class="convert-btn" type="submit">Convert</button>
+                        <br> <br> <br>
+                    </form>
+                    
+
+                </div>
+                
+
+            
+        </div>
+    </div>
+</body>
+
+</html>

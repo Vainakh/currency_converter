@@ -1,0 +1,143 @@
+.container {
+    position: relative;
+    text-align: center;
+    margin: auto auto;
+    font-size: 24px;
+    padding-top: 4rem;
+}
+
+.form {
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    text-align: left;
+    margin: auto 10px;
+    font-size: 20px;
+    padding-top: 4rem;
+    border: 1px black;
+    border-style: solid;
+    padding: 10px;
+}
+
+.convert-btn {
+    position: absolute;
+    left: 7px;
+    background-color:#1971e4;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    size: 20px;
+   
+    box-sizing: border-box;   
+}
+
+.home-btn {
+    position: absolute;
+    top: 65%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color:#1971e4;
+    border: none;
+    color: white;
+    padding: 12px 14px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    size: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    box-sizing: border-box;  
+    z-index: 3;
+}
+
+.form-home {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    margin: auto 10px;
+    font-size: 20px;
+    padding-top: 4rem;
+    border: 1px black;
+    border-style: solid;
+    padding: 10px;
+    width: 180px;
+    height: 100px;
+}
+
+.label {
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+::placeholder {
+    color: lightgrey;
+}
+
+.converted-amt {
+    position: absolute;
+    left: 37%;
+    top: 40%;
+}
+
+.not-valid {
+    position: absolute;
+    left: 37%;
+    top: 15%;
+    
+}
+
+.not-valid-amount {
+    position: absolute;
+    top: -70px;
+    left: -20px; 
+    width: 335px;
+    height: 20px;
+    border: 1px black;
+    border-style: solid;
+    padding: 10px;
+    margin: auto;
+    background-color: #e76943;
+    border-radius: 4px;
+    color: white;
+}
+
+.not-valid-first-currency {
+    position: absolute;
+    top: -20px;
+    left: -19px;
+    width: 335px;
+    height: 20px;
+    border: 1px black;
+    border-style: solid;
+    padding: 10px;
+    margin: auto;
+    background-color: #e46038;
+    border-radius: 4px;
+    color: white;
+}
+
+.not-valid-second-currency {
+    position: absolute;
+    top: 30px;
+    left: -19px;
+    width: 335px;
+    height: 20px;
+    border: 1px black;
+    border-style: solid;
+    padding: 10px;
+    background-color: #ec5b2f;
+    border-radius: 4px;
+    color: white;
+}
+
+
+
+
